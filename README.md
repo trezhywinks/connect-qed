@@ -1,6 +1,13 @@
-## Instale o ADB
+## Instale o ADB:
  ```ts
 sudo apt install adb
+```
+## Connect-qed:
+```
+$ git clone https://github.com/trezhywinks/connect-qed.git
+$ cd connect-qed
+$ bash ins.sh
+$ qed -s --start or $ python3 qed.py
 ```
 
 ## 🧠 Observações técnicas: 
