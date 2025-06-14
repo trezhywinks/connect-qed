@@ -92,7 +92,7 @@ def shell_loop():
             print("Comando não reconhecido. Use 'info', 'get_sms', 'get_calls', 'get_contacts', 'get_apps', 'export <tipo>', 'adb <comando>', ou 'exit'.")
 
 if __name__ == "__main__":
-    os.system("clear")
+##    os.system("clear")
     wait_for_device()
     device_info = get_device_info()
     print("\n[+] Informações do dispositivo:")

@@ -1,4 +1,5 @@
 #!/bin/bash
 
-sudo apt install adb
+cp -r qed /bin/
+sudo apt install adb -y
 

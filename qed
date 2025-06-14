@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+ ORANGE="$(printf '\033[33m')" 
+WHITE="$(printf '\033[37m')" 
+
+printf " \e[1;37m\n"
+
+
+cd /root/connect-qed || { echo "Failed to enter the directory => /root/connect-qed"; exit 1; }
+
+connect_qed(){
+  case "$1 $2" in
+    "-s --start")
+      server 
+      ;;
+    *)
+      echo "Erro! Unknown command: $1"
+      exit 1
+      ;;
+  esac
+}
+
+server(){
+  echo "${WHITE}[${ORANGE}INFO${WHITE}] Starting Connect-qed..."
+python3 qed.py
+}
+
+
+connect_qed "$@"
